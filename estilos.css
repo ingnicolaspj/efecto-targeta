@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightsalmon;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#card{
+    width: 200px;
+    height: 400px;
+    background-color: slateblue;
+    color:white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+
+    background: rgba( 208, 2, 27, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+img{
+    transform: translateY(-100%);
+    transition: 1.2s ease-in-out;
+}
+
+#card:hover img{
+    transform: translateY(0px);
+}
+
+.text{
+    transform: translateY(300px);
+    transition: 1.2s ease-in-out;
+}
+
+#card:hover .text{
+    transform: translateY(-50px);
+}
